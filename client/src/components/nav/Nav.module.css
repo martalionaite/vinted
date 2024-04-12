@@ -1,0 +1,22 @@
+/* Nav */
+
+.mainNav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.mainNav > .navLink {
+    padding: 0px 10px 0px 10px;
+    font-size: 18px;
+    line-height: 30px;
+    color: grey;
+    text-decoration: none;
+    transition-duration: 0.15s;
+}
+
+.mainNav > .navLink:hover{
+    text-decoration: none;
+    background-color: rgba(218, 216, 216, 0.786);
+}
