@@ -11,7 +11,9 @@ import { PageKnygos } from "./components/pramogos-knygos/PageKnygos";
 import { PageKnygosItem } from "./components/pramogos-knygos/PageKnygosItem";
 
 import { PageVaikams } from "./components/pages/PageVaikams";
-
+import { PageVaikamsItem } from "./components/vaikams-item-list/PageVaikamsItem";
+import { PageApranga } from "./components/apranga-vaikams/PageApranga";
+import { PageAprangaItem } from "./components/apranga-vaikams/PageAprangaItem";
  
 function App() {
   return (
@@ -32,6 +34,9 @@ function App() {
           <Route path='/gyvunams' element={<PageGyvunams />} />
 
           <Route path='/vaikams' element={<PageVaikams />} />
+          <Route path='/vaikams/:id' element={<PageVaikamsItem />} />
+          <Route path='/vaikams/apranga' element={<PageApranga />} />
+          <Route path='/vaikams/apranga/:id' element={<PageAprangaItem />} />
           {/* <Route path='/apie-mus' element={<></>} />
           <Route path='/musu-platforma' element={<></>} /> */}
           <Route path='*' element={<Page404 />} />

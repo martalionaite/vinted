@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import mergaitem from '../../assets/img/mergaitem1.jpeg';
-import profilePic from '../../assets/img/profile-picture1.jpg'
+import aprangaImg from '../../assets/img/apranga.jpeg';
+import profilePic from '../../assets/img/profile-picture2.jpeg';
 
-export function AprangaMergaitemsCard(){
+export function AprangaCard(){
     return (
         <article className="col">
 
@@ -13,20 +13,20 @@ export function AprangaMergaitemsCard(){
             </div>
             
             <div className="card shadow-sm">
-                <Link to="/pramogos/vaizdo-zaidimai/:id">
-                    <img src={mergaitem} alt="Item for sale" className={`bd-placeholder-img card-img-top`} width="100%" height="225" />
+                <Link to="/pramogos/apranga/:id">
+                    <img src={aprangaImg} alt="Item for sale" className={`bd-placeholder-img card-img-top`} width="100%" height="225" />
                 </Link>
 
                 <div className="card-body ms-2 p-4">
-                    <Link to="/pramogos/vaizdo-zaidimai/:id">
-                        <h3>Vaizdo zaidimu prekiu pavadinimas</h3>
+                    <Link to="/pramogos/apranga/:id">
+                        <h3>Aprangos prekiu pavadinimas</h3>
                     </Link>
                     <p className="card-text my-2">Kaina: 15 Eur</p>
                     <div className="d-flex justify-content-between align-items-center">
                         <div className="btn-group">
-                            <Link to='/pramogos/vaizdo-zaidimai/:id' className="btn btn-sm btn-outline-secondary">Read more</Link>
+                            <Link to='/pramogos/apranga/:id' className="btn btn-sm btn-outline-secondary">Read more</Link>
                         </div>
-                        <small className="text-body-secondary">3 mins</small>
+                        <small className="text-body-secondary">5 mins</small>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
-import { AprangaMergaitemsItem } from "./apranga-mergaitems/AprangaMergaitemsItem";
-
+import { Link } from "react-router-dom";
+import { VaikamsItemList } from "../vaikams-item-list/VaikamsItemList";
+ 
 
 export function PageVaikams(){
     return (
@@ -75,9 +76,16 @@ export function PageVaikams(){
 
             <hr />
 
+            <div className="links">
+                <Link className='link' to='/vaikams/apranga'>Apranga vaikams</Link>
+                <Link className='link' to='/vaikams/kedutes'>Kėdutės</Link>
+                <Link className='link' to='/vaikams/zaislai'>Žaislai</Link>
+                <Link className='link' to='/vaikams/baldai'>Baldai vaikams</Link>
+            </div>
+
         <hr />
 
-        <AprangaMergaitemsItem />
+        <VaikamsItemList />
             </section>
 
     );
